@@ -1,0 +1,14 @@
+:root{
+    --default-font-family: 'Roboto', sans-serif;
+    --sec-font-family: 'Bree Serif', serif;
+    --thr-font-family: 'Abril Fatface', cursive;
+    --title-font-family: 'PT Sans', sans-serif;
+    --header-font-family: 'IM Fell Double Pica SC', serif;
+
+    --normal-font-size: 18px;
+    --mobile-font-size: 16px;
+    --navbar-font-size: 22px;
+
+    --text-color-1: #AFAFAF;
+    --text-color-2: #333333;
+}
