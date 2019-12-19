@@ -1,0 +1,65 @@
+@media (min-width: 1000px) {
+    .front-gallery{
+        display: grid;
+        grid-template-rows: repeat(2, 20em);
+        grid-template-columns: repeat(3, 25em);
+        grid-gap: 3em;
+        justify-content: center;
+        margin-bottom: 3em;
+        overflow: hidden;
+    }
+    .front-gallery div{
+        border-radius: 5px;
+        z-index: 2;
+    }
+    .front-gallery img{
+        overflow: hidden;
+        border-radius: 5px;
+        height: 20em;
+        width: 25em;
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.397);
+    }
+    .front-gallery a h2{
+        position: absolute;
+        z-index: 3;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.87);
+        font-family: var(--header-font-family);
+        font-size: 30px;
+        padding: 1em 1em;
+        text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.712);
+    }
+    .front-gallery a p{
+        position: absolute;
+        z-index: 3;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.87);
+        font-size: 50px;
+        padding: 2em 3.5em;
+        opacity: 0;
+        transform: translateY(1em);
+        transition: 0.3s;
+    }
+    .front-gallery a:hover p{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .front-gallery a{
+        overflow: hidden;
+    }
+    .front-gallery a img{
+        transition: 0.3s;
+    }
+    .front-gallery a:hover img{
+        filter: /*blur(5px)*/ brightness(70%);
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 1000px){
+    .front-gallery{
+        display: none;
+    }
+}

@@ -1,10 +1,39 @@
-@keyframes nav{
-    0%{
+@keyframes nav {
+    0% {
         opacity: 0;
         transform: translateY(-2em);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes sidebox {
+    0% {
+        transform: translateX(-40em);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes sideul {
+    0% {
+        transform: translateX(-10em);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes media {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

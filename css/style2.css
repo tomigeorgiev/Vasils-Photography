@@ -1,0 +1,68 @@
+@media (min-width: 1000px) {
+    .gallery {
+        float: right;
+        color: #333333;
+        font-family: var(--header-font-family);
+    }
+    .gallery h1 {
+        font-size: 140px;
+        opacity: 0;
+        margin-right: 2em;
+        animation: media 1.5s ease-in-out 2.5s forwards;
+    }
+    .botnav {
+        overflow: hidden;
+        justify-content: center;
+        background-color: #838383;
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 5;
+    }
+    .botnav a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: var(--sec-font-family);
+        text-align: center;
+        padding: 14px 28px;
+        float: left;
+    }
+    .botnav a:nth-child(1) {
+        margin-left: 28%;
+    }
+    .botnav a:hover {
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+        -webkit-mask-size: 200%;
+        animation: shine 1.5s infinite;
+    }
+    @-webkit-keyframes shine {
+        from {
+            -webkit-mask-position: 100%;
+        }
+        to {
+            -webkit-mask-position: -50%;
+        }
+    }
+    .nature {
+        display: grid;
+        grid-template-rows: repeat(10, 5em);
+        grid-template-columns: repeat(7, 10em);
+        grid-gap: 1em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: var(--header-font-family);
+        letter-spacing: 1px;
+    }
+    .nature img{
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+    .nature div:hover img{
+        filter: brightness(80%) blur(1px);
+    }
+}
+
+@media (max-width: 1000px) {}
