@@ -15,3 +15,7 @@ window.onclick = function (event) {
     }
   }
 }
+
+function imgWindow() {
+  window.open("image") 
+}
