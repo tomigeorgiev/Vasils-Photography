@@ -1,4 +1,7 @@
 @media (min-width: 1000px) {
+    body {
+        z-index: 1;
+    }
     .gallery {
         float: right;
         color: #333333;
@@ -10,80 +13,192 @@
         margin-right: 2em;
         animation: media 1.5s ease-in-out 2.5s forwards;
     }
-    .botnav {
-        overflow: hidden;
-        justify-content: center;
-        background-color: #838383;
-        top: 0;
-        position: sticky;
-        position: -webkit-sticky;
-        z-index: 5;
-    }
-    .botnav a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        font-family: var(--sec-font-family);
-        text-align: center;
-        padding: 14px 28px;
-        float: left;
-    }
-    .botnav a:nth-child(1) {
-        margin-left: 28%;
-    }
-    .botnav a:hover {
-        -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
-        -webkit-mask-size: 200%;
-        animation: shine 1.5s infinite;
-    }
-    @-webkit-keyframes shine {
-        from {
-            -webkit-mask-position: 100%;
-        }
-        to {
-            -webkit-mask-position: -50%;
-        }
-    }
-    .nature {
+    .galleryBox {
         display: grid;
-        grid-template-rows: repeat(10, 5em);
-        grid-template-columns: repeat(7, 10em);
-        grid-gap: 1em;
+        grid-template-columns: repeat(4, 17em);
+        grid-template-rows: repeat(4, 15em);
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: var(--header-font-family);
-        letter-spacing: 1px;
+        grid-gap: 0.1em;
+        padding-bottom: 5em;
+        height: 26em;
+        overflow-y: hidden;
+        background-color: rgb(245, 245, 245);
     }
-    .nature img{
-        width: 100%;
+    .galleryBox div {
+        overflow: hidden;
+        background: #ebebeb;
+    }
+    .galleryBox div img {
         height: 100%;
-        transition: 0.7s;
+        transition: 0.3s;
         z-index: 1;
     }
-    .nature a{
+    .galleryBox div:hover img {
+        filter: brightness(0.6) blur(0.5px);
+        transform: scale(1.1);
+    }
+    .galleryBox div p {
+        display: none;
+    }
+    .galleryBox div a {
         position: absolute;
+        text-decoration: none;
+        color: rgb(207, 207, 207);
+        font-size: 40px;
         z-index: 2;
-        color: white;
-        background: #333333;
-        padding: 15px;
-        transform: translateX(-95%);
-        border-radius: 5px;
-        float: right;
+        transition: 0.3s;
+        transform: translateX(3em) translateY(3.5em);
         opacity: 0;
-        transition:  0.7s;
     }
-    .nature div:hover img{
-        filter: brightness(80%) blur(1px);
-    }
-    .nature div:hover a{
+    .galleryBox div:hover a {
+        transform: translateX(3em) translateY(2.5em);
         opacity: 1;
-        transform: translateX(-100%);
     }
-    .nature div a:hover{
-        opacity: 1;
-        transform: translateX(-100%) scale(1.1);
+    .galleryBox div:hover a:hover {
+        color: white
+    }
+    .searchBox {
+        padding: 3em;
+        text-align: center;
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .searchBox #search {
+        background-color: rgb(245, 245, 245);
+        width: 20em;
+        height: 20px;
+        font-size: 20px;
+        font-family: var(--sec-font-family);
+        padding: 5px;
+        color: black;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    #search:focus{
+
+    }
+    .searchBox #search::placeholder {
+        color: rgb(109, 109, 109);
+    }
+    .searchBox button {
+        height: 34.5px;
+        width: 40px;
+        font-size: 20px;
+        color: black;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 0px 7px 7px 0px;
+        margin-left: -4px;
+        transform: translateY(-2px);
+        outline: none;
+    }
+    .searchBox #search:focus {
+        border: none;
+    }
+    #result {
+        text-align: center;
+        font-size: 18px;
+        font-family: var(--title-font-family);
+        display: none;
+        padding: 5px;
+        background-color: rgb(245, 245, 245);
+    }
+    .tag {
+        padding: 1em;
+        text-align: center;
+        background: rgb(245, 245, 245);
+        font-family: var(--header-font-family);
+        font-size: 50px;
+    }
+    .tag::after {
+        content: '';
+        display: block;
+        height: 1.5px;
+        width: 5em;
+        background: #000;
+        margin-left: 11.7em;
+    }
+    .buttonTag {
+        background: rgb(245, 245, 245);
+        text-align: center;
+        margin-top: -1em;
+        padding-bottom: 3em;
+    }
+    .buttonTag .expand {
+        background: transparent;
+        padding: 14px 28px;
+        font-family: var(--sec-font-family);
+        font-size: 18px;
+        border: 1.5px solid black;
+        border-radius: 3px;
+        transition: 0.2s;
+        margin-top: 2em;
+    }
+    .buttonTag .expand:hover {
+        background: black;
+        color: rgb(245, 245, 245);
     }
 }
 
 @media (max-width: 1000px) {}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin-left: 2em;
+    margin-top: -4px;
+    border: 1px solid black;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: transparent;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent black transparent;
+    top: 7px;
+}
+
+.select-items div, .select-selected {
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items {
+    position: absolute;
+    background-color: transparent;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}

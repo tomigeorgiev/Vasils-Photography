@@ -57,74 +57,203 @@
             <div class="line2"></div>
             <div class="line3"></div>
             <div class="gallery">
-               <h2>Gallery</h2>
+                <h2>Gallery</h2>
             </div>
         </div>
     </div>
-    <div class="botnav">
-        <a href="#">Animals</a>
-        <a href="#">Landscapes</a>
-        <a href="#Nature">Nature</a>
-        <a href="#">Photoshoots</a>
-        <a href="#">Macro</a>
+    <div class="searchBox" id="searchBar">
+        <input type="text" name="Search" id="search" placeholder="Search Images" >
+        <button id="searchBtn" style="border: none;"><i class="fas fa-search"></i></button>
+        <div class="custom-select" style="width:200px;">
+            <select>
+                <option value="0">All</option>
+                <option value="1">Nature</option>
+                <option value="2">Animals</option>
+                <option value="3">Landscapes</option>
+                <option value="4">Photoshoots</option>
+                <option value="5">Macro</option>
+                <option value="6">Other</option>
+            </select>
+        </div>
     </div>
-    <div class="nature" id="Nature">
-        <div style="grid-column: 1 / span 7;">
-            <h1>Nature</h1>
+    <section id="nature">
+        <div class="tag">
+            Nature
         </div>
-        <div style="grid-column: span 2;grid-row: span 2;height: 11em;">
-            <img src="Images/nat1.jpg" onclick="window.open(this.src)" alt=nature">
-            <a download href="/Images/nat1.jpg"><i class="fas fa-download"></i></a>
+        <div class="galleryBox small" id="galleryBox" id="nature">
+            <div>
+                <p>flower on beach</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/nat4.jpg">
+            </div>
+            <div>
+                <p>wood</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/wood.jpg">
+            </div>
+            <div>
+                <p>deep in the woods</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/nat1.jpg">
+            </div>
+            <div>
+                <p>flower</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/120.jpg">
+            </div>
+            <div>
+                <p></p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img src="Images/nat2.jpg"
+                    style="height: 170%;margin-top: -5em">
+            </div>
+            <div>
+                <p>fire</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/fire.jpg">
+            </div>
+            <div>
+                <p>dandelion</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/gluharche.jpg" style="height: 170%;">
+            </div>
+            <div>
+                <p>grass</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/nat3.jpg" style="height: 170%;margin-top: -5em">
+            </div>
         </div>
-        <div style="height: 5em;">
-            <img src="Images/nat4.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
+        <div class="buttonTag">
+            <p id="outer"></p>
         </div>
-        <div style="grid-row: span 3;height: 17em;">
-            <img src="Images/nat2.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
+    </section>
+    <section>
+        <div class="tag" id="cardsTag">
+            Playing Cards
         </div>
-        <div style="grid-column: span 3; grid-row: span 3; height: 17em;">
-            <img src="Images/fire.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
+        <div class="galleryBox" id="galleryBox" id="cards">
+            <div>
+                <p>Bicycle cards #1</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #2</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti2.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #3</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti3.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #4</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti2.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #5</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti4.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #6</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti5.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #7</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti6.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #8</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti1.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #9</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti5.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #10</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti6.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #11</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti2.jpg">
+            </div>
+            <div>
+                <p>Bicycle cards #12</p><a download="image.jpg" href="#"><i class="fas fa-download"></i></a><img
+                    src="Images/karti3.jpg">
+            </div>
         </div>
-        <div style="grid-row: span 3; height: 17em;">
-            <img src="Images/gluharche.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
+        <div class="buttonTag">
+            <button class="expand" onclick="expand('cards')">
+                Expand
+            </button>
         </div>
-        <div style="grid-row: span 3; height: 17em;">
-            <img src="Images/nat3.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
+        <div class="buttonTag">
+            <p id="out"></p>
         </div>
-        <div style="height: 5em;">
-            <img src="Images/nature.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
-        </div>
-        <div style="grid-row: span 2;height: 11em;">
-            <img src="Images/nature.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
-        </div>
-        <div style="grid-column: span 2;grid-row: span 2;height: 11em;">
-            <img src="Images/macro2.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
-        </div>
-        <div style="grid-row: span 2;height: 11em;">
-            <img src="Images/nature.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
-        </div>
-        <div style="height: 5em;">
-            <img src="Images/nature.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
-        </div>
-        <div style="height: 5em;">
-            <img src="Images/nature.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
-        </div>
-        <div style="height: 5em;">
-            <img src="Images/nature.jpg" alt="kotka">
-            <a href="#"><i class="fas fa-download"></i></a>
-        </div>
+    </section>
+    <div class="notavailable">
+        <i class="fas fa-exclamation-circle"></i> Sorry ! This site is currently unavailable from mobile devices <i
+            class="fas fa-exclamation-circle"></i> <br> <i class="far fa-dizzy i"></i>
+        <!--Sorry ! This site is currently unavailable for mobile devices-->
     </div>
 </body>
+<script src="JavaScript/main.js"></script>
+<script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        ll = selElmnt.length;
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < ll; j++) {
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function (e) {
+                var y, i, k, s, h, sl, yl;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = s.length;
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < sl; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        yl = y.length;
+                        for (k = 0; k < yl; k++) {
+                            y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
+                    }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function (e) {
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+        });
+    }
+    function closeAllSelect(elmnt) {
+        var x, y, i, xl, yl, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        xl = x.length;
+        yl = y.length;
+        for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+    document.addEventListener("click", closeAllSelect);
+</script>
 
 </html>
